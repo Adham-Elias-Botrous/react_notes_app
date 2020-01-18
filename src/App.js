@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import './Fontawesome-all.css';
 import Preview from './components/Preview/Preview';
 import { Notes } from './components/Notes/Notes';
 import { NotesList } from './components/Notes/NotesList';
