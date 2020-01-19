@@ -154,9 +154,11 @@ class App extends Component {
               />
             ))}
           </NotesList>
-          <button className="add-btn" onClick={this.addNoteHandler}>
-            +
-          </button>
+          {!editing && !creating && (
+            <button className="add-btn" onClick={this.addNoteHandler}>
+              +
+            </button>
+          )}
         </Notes>
         <Preview>
           {creating ? (
