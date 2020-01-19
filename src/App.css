@@ -85,7 +85,7 @@
 .note-operations {
   position: absolute;
   right: 10%;
-  top: 6%;
+  top: 4%;
   display: flex;
   justify-content: space-between;
   width: 60px;
@@ -120,7 +120,7 @@ button:active {
 
 .alert-container {
   position: fixed;
-  left: 50%;
+  left: 10%;
   top: 30%;
   background: #db2b3c;
   min-width: 250px;
