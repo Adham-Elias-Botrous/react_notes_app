@@ -1,6 +1,16 @@
 import React from 'react';
 
 const Preview = props => {
-  return <div className="preview-section">{props.children}</div>;
+  const { editing, creating, children } = props;
+  return (
+    <div
+      className={
+        !creating && !editing
+          ? 'preview-section'
+          : ' preview-section full-width'
+      }>
+      {children}
+    </div>
+  );
 };
 export default Preview;

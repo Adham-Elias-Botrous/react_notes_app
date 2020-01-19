@@ -126,6 +126,12 @@ button:active {
   min-width: 250px;
   border-radius: 5px;
 }
+.full-width {
+  width: 100%;
+}
+.disappear {
+  display: none;
+}
 
 .alert-container ul {
   font-size: 14px;
@@ -133,14 +139,7 @@ button:active {
   color: #fff;
 }
 
-@media (max-width: 600px) {
-  .notes-section {
-    width: 30%;
-  }
-  .preview-section {
-    width: 70%;
-    padding: 10px 30px;
-  }
+@media (max-width: 400px) {
   .btn-div {
     flex-direction: column;
   }

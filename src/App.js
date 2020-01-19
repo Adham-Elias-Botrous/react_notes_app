@@ -143,7 +143,7 @@ class App extends Component {
     } = this.state;
     return (
       <div className="App">
-        <Notes>
+        <Notes editing={editing} creating={creating}>
           <NotesList>
             {notes.map(note => (
               <Note
@@ -160,7 +160,7 @@ class App extends Component {
             </button>
           )}
         </Notes>
-        <Preview>
+        <Preview editing={editing} creating={creating}>
           {creating ? (
             <NoteForm
               formTitle="Add a  new note"

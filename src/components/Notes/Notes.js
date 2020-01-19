@@ -1,5 +1,10 @@
 import React from 'react';
 
 export const Notes = props => {
-  return <div className="notes-section">{props.children}</div>;
+  const { editing, creating, children } = props;
+  return (
+    <div className={!creating && !editing ? 'notes-section' : ' disappear'}>
+      {children}
+    </div>
+  );
 };
