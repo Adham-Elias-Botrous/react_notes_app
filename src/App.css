@@ -144,3 +144,16 @@ button:active {
     flex-direction: column;
   }
 }
+
+@media (max-width: 600px) {
+  .notes-section {
+    width: 35%;
+  }
+
+  .preview-section {
+    width: 65%;
+  }
+  .full-width {
+    width: 100%;
+  }
+}
