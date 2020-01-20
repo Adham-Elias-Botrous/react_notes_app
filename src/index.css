@@ -53,9 +53,18 @@ body {
   }
 
   #root {
-    width: 95%;
+    width: 80%;
     position: static;
     margin: 0 auto;
     transform: translate(0, 0);
+  }
+}
+
+@media (max-width: 600px) {
+  #root {
+    width: 100%;
+  }
+  body {
+    margin: 5px;
   }
 }
